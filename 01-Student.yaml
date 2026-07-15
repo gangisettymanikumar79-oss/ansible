@@ -2,23 +2,23 @@
   dob: "1998-12-25"
   mobile: "1234567890"
   addresses:
-  -type: "permaddress"
-  street: 101
-  city: "hyd"
-  -type: "current"
-  street: 101
-  city:  "guntur"
+    -type: "permaddress"
+    street: 101
+    city: "hyd"
+    -type: "current"
+    street: 101
+    city:  "guntur"
 
 - name: "manikumar gangisetty"
   dob: "1998-12-25"
   mobile: "1234567890"
   addresses:
-  -type: "permaddress"
-  street: 101
-  city: "hyd"
-  -type: "current"
-  street: 101
-  city: "guntur"
+    -type: "permaddress"
+    street: 101
+    city: "hyd"
+    -type: "current"
+    street: 101
+    city: "guntur"
 
 
 
