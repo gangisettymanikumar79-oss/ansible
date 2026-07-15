@@ -1,18 +1,18 @@
 - name:"manikuamr G"
   dob:"1998-12-25"
-  mobile:"852639547"
-  addresses:
+  mobile:"1234567890"
+  addresses
   -type:permaddress
    street:101
    city:"hyd"
    -type:current
    street:101
    city:"guntur"
-   
+
 - name:"manikuamr G"
   dob:"1998-12-25"
-  mobile:"852639547"
-  addresses:
+  mobile:"1234567890"
+  addresses
   -type:permaddress
    street:101
    city:"hyd"
