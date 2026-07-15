@@ -1,0 +1,11 @@
+- name: manikumar gangisetty
+  hosts:frontend  #target server
+  tasks:
+  - name: Ensure apache is at the latest version
+    ansible.builtin.yum:
+      name: httpd
+      state: latest
+
+
+
+
