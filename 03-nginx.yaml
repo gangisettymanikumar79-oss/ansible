@@ -1,9 +1,12 @@
-# Test we can logon to 'webservers' and execute python with json lib.
-# ansible webservers -m ansible.builtin.ping
+---
+- name: Test connectivity
+  hosts: webservers
+  gather_facts: false
 
-- name: Example from an Ansible Playbook
-  ansible.builtin.ping:
+  tasks:
+    - name: Verify Ansible connectivity
+      ansible.builtin.ping:
 
-- name: Induce an exception to see what happens
-  ansible.builtin.ping:
-    data: crash
+    - name: Intentionally trigger an exception
+      ansible.builtin.ping:
+        data: crash
