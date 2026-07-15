@@ -1,5 +1,6 @@
-- name: manikumar gangisetty
-  hosts:frontend  #target server
+- name: Update web servers
+  hosts: webservers
+  remote_user: root
   tasks:
   - name: Ensure apache is at the latest version
     ansible.builtin.yum:
