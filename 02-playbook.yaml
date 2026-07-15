@@ -1,8 +1,8 @@
-- name: Set a hostname
-  ansible.builtin.hostname:
-    name: web01
+- name: demo on debug
+  hosts: frontend
+  tasks:
+  - name: hello world
+    debug:
+      msg: "hello ansible!"
 
-- name: Set a hostname specifying strategy
-  ansible.builtin.hostname:
-    name: web01
-    use: systemd
+
