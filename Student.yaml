@@ -1,0 +1,31 @@
+<Student>
+<Firstname>Manikumar</Firstname>
+  <latestname>gangisetty</latestname>
+    <dob>1998-02-14</dob>
+      <mobile>6305283265</mobile>
+# <i-----<address>guntur, lakshmipuram, 5002415</address>
+<addresses>
+  <permaddress>
+    <street>306</street>
+      <addressline>SR.Nagar near postoffice</addressline>
+        <addressline1>SR.Nagar near postoffice</addressline2>
+          <addressline1>sri venkateswara swamy temple</addressline2>
+    </permaddress>
+  </addresses>
+</Student>
+<Student>
+<Firstname>Manikumar</Firstname>
+  <latestname>gangisetty</latestname>
+    <dob>1998-02-14</dob>
+      <mobile>6305283265</mobile>
+# <i-----<address>guntur, lakshmipuram, 5002415</address>
+<addresses>
+  <permaddress>
+    <street>306</street>
+      <addressline>SR.Nagar near postoffice</addressline>
+        <addressline1>SR.Nagar near postoffice</addressline2>
+          <addressline1>sri venkateswara swamy temple</addressline2>
+    </permaddress>
+  </addresses>
+</Student>
+
