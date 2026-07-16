@@ -1,9 +1,12 @@
-- name:  ping the server
-  hosts: localhost #target serrver
-  tasks: # tasks == module == collection
-  - name: ping the server
-    ping: ansible.builtin.ping
-    
+- name: Ping localhost
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: Ping the server
+      ansible.builtin.ping:
+
       
       
 
