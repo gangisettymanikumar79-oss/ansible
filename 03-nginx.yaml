@@ -1,6 +1,6 @@
 - name:  install and start nginx
-  hosts: all
-  become: true
+  hosts: local
+  become: yes
   tasks:
    - name:  install nginx
      ansible.builtin.package:
@@ -10,7 +10,7 @@
      ansible.builtin.package:
       name: nginx
       state: started
-      enabled: true
+      enabled: yes
       
 
 
