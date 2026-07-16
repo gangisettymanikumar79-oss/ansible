@@ -10,3 +10,4 @@
     - name: Intentionally trigger an exception
       ansible.builtin.ping:
         data: crash
+
