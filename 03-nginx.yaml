@@ -1,6 +1,6 @@
 ---
 - name: Test connectivity
-  hosts: webservers
+  hosts: localhost
   gather_facts: false
 
   tasks:
