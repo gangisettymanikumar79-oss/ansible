@@ -3,7 +3,8 @@
   tasks:
   - name: hello world
     debug:
-      msg: "hello ansible!"
+      msg: "hello ansible !"
+    
 
 
 
