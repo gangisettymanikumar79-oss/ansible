@@ -1,0 +1,11 @@
+- name: demo on play level variable
+  hosts: localhost
+  connection: local
+  vars:
+    COURSE: "ansible"
+    TRAINER: "manikumar"
+    DURATION: "150HRS"
+  tasks:
+  - debug:
+      msg:"Hi, I am learning {{ COURSE }}, Trainer is {{ TRAINER }}, Duration is {{ DURATION }}"
+     
