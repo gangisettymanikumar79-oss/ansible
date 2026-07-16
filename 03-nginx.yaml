@@ -1,4 +1,4 @@
-- name: Install Nginx
+- name: Install and start Nginx
   hosts: localhost
   become: yes
 
@@ -13,3 +13,14 @@
         name: nginx
         state: started
         enabled: yes
+
+# ; local group vars
+# ; [local:vars]
+# ; COURSE="Ansible"
+# ; TRAINER="Sivakumar"
+# ; DURATION="10HRS"
+
+# ; [frontend:vars]
+# ; COURSE="Ansible"
+# ; TRAINER="Sivakumar"
+# ; DURATION="10HRS"
