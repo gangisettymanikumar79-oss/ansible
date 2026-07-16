@@ -1,18 +1,18 @@
-- name: Install and start Nginx
-  hosts: localhost
-  become: yes
-
+- name: dnf install the nginx
+  hosts: local
   tasks:
-    - name: Install Nginx
-      yum:
-        name: nginx
-        state: present
+  - name:  install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present
+  - name: start nginx
+    server:
+      name: nginx
+      state: present
+      enabled: yes
+      
 
-    - name: Start Nginx
-      service:
-        name: nginx
-        state: started
-        enabled: yes
-        
+
+
 
 
