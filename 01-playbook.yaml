@@ -1,5 +1,6 @@
-- name: Ping servers
-  hosts: all
+- name: Ping localhost
+  hosts: localhost
+  connection: local
   gather_facts: no
 
   tasks:
