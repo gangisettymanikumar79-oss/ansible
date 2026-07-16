@@ -11,4 +11,5 @@
     - name: debug
       ansible.builtin.debug:
         msg: "Hi, I am learning ansible, Trainer is {{ trainer }}, Duration is {{ duration }}"
+        
      
