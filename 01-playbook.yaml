@@ -1,8 +1,9 @@
 - name:  ping the server
-  hosts: frontend #target serrver
+  hosts: localhost #target serrver
   tasks: # tasks == module == collection
   - name: ping the server
     ping: ansible.builtin.ping
+    
       
       
 
