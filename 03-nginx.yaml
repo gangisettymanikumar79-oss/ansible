@@ -1,13 +1,15 @@
----
-- name: Test connectivity
+- name: Install Nginx
   hosts: localhost
-  gather_facts: false
+  become: yes
 
   tasks:
-    - name: Verify Ansible connectivity
-      ansible.builtin.ping:
+    - name: Install Nginx
+      yum:
+        name: nginx
+        state: present
 
-    - name: Intentionally trigger an exception
-      ansible.builtin.ping:
-        data: crash
-
+    - name: Start Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
