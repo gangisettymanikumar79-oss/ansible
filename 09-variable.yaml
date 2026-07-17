@@ -2,6 +2,7 @@
   hosts: frontend
   # connection: local
   gather_facts: false
+  
   tasks:
     - name: print name
       ansible.builtin.debug:
