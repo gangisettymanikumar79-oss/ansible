@@ -1,5 +1,6 @@
 - name: check the variable data type
-  hosts: localhost
+  hosts: local
+  connection: local
   vars:
     course: "python with AIops"
     duration: "150HRS"
