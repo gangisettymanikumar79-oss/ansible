@@ -1,0 +1,18 @@
+- name: check the variable data type
+  hosts: localhost
+  connection: local
+  vars:
+  dict1:
+    name: Leeroy Jenkins
+    age: 25
+    occupation: Astronaut
+
+  dict2:
+    location: Galway
+    country: Ireland
+    postcode: H71 1234
+
+  tasks:
+- name: Combine dict1 and dict2 into a merged_dict var
+  ansible.builtin.set_fact:
+    merged_dict: "{{ dict1 | ansible.builtin.combine(dict2) }}"
