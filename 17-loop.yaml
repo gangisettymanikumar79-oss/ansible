@@ -4,7 +4,7 @@
   tasks:
   - name: print name
     ansible.builtin.debug:
-      msg: "Hello {{item}}"
+      msg: "{{item}}"
     loop:
     - manikuamr
     - siva
