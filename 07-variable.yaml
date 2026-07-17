@@ -7,8 +7,8 @@
   tasks:
   - name: criecket
     ansible.builtin.debug:
-      msg:"{{captions}} by {{batman}} is {{bolwer}}"
-      
+      msg:"{{country}} by {{captain}} is {{player}}"
+
 
     
 
