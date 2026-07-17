@@ -1,14 +1,14 @@
 ---
-- name: Demo Playbook
-  hosts: localhost
-  connection: local
+- name: "Demo Playbook"
+  hosts: "localhost"
+  connection: "local"
   gather_facts: false
 
   vars_files:
     - course.yaml
 
   tasks:
-    - name: Print course details
+    - name: "Print course details"
       ansible.builtin.debug:
         msg: "{{ course }} by {{ trainer }}, is {{ duration }}"
     
