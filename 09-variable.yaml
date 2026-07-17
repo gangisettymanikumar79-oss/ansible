@@ -1,11 +1,11 @@
 - name: demo on inventory
-  hosts: localhost
-  connection: local
+  hosts: frontend
   gather_facts: false
+
   tasks:
     - name: print name
-      debug:
-        msg: "Hi, I am learning  is {{ trainer }}, Duration is {{ duration }}"
+      ansible.builtin.debug:
+        msg: "Hi, I am learning, trainer is {{ trainer }}, Duration is {{ duration }}"
         
 
         
