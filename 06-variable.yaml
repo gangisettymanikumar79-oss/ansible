@@ -13,6 +13,7 @@
         msg: "{{ course }} by {{ trainer }}, is {{ duration }}"
         
 
+
     
     
 
