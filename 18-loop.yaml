@@ -1,0 +1,12 @@
+- name: install on package
+  hosts: local
+  connection: local
+  tasks:
+  - name: print name package
+    ansible.builtin.debug:
+      msg: "{{item}}"
+    loop:
+    - git
+    - docker
+    - ansible
+    - nginx
