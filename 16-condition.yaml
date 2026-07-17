@@ -1,0 +1,15 @@
+- name: condition useing ansible_facts
+  hosts: frontend
+  tasks:
+  - name: Redhat family
+    debug:
+      msg: "package manager is apt-ge"
+    when: ansible_facts.os_family == "Redhat"
+
+    
+  tasks:
+  - name: Debian family
+    debug:
+      msg: "package manager is apt-ge"
+    when: ansible_facts.os_family == "Debian"
+
