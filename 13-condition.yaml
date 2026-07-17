@@ -1,4 +1,4 @@
-- name: the if else condition
+- name: Demo if else condition
   hosts: localhost
   gather_facts: false
   vars:
