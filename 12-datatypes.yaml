@@ -11,7 +11,13 @@
     more_details:
       month: "5"
       trainer: "manikuamr"
-      msg: "Hi, I am learning ansible, Trainer is {{ trainer }}, Duration is {{ duration }}"
+      msg: |
+        name: {{course}}
+        duration: {{duration}}
+        is_it_live_: {{is_live_sessions}}
+        tops: {{tops}}
+
+      
     
 
 
