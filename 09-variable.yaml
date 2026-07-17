@@ -1,5 +1,5 @@
 - name: demo on inventory
-  hosts: frontend
+  hosts: frontend:vars
   # connection: local
   gather_facts: false
   tasks:
