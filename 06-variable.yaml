@@ -1,0 +1,11 @@
+- name: demo
+  hosts: local
+  connection: local
+  vars_files:
+  - course.yaml
+  tasks:
+  - debug:
+    msg: "{{ course}} by {{trainer}}"
+    
+
+
