@@ -1,6 +1,6 @@
 - name: check the variable live_sessions
   hosts: local
-  gather_facts: false
+  
   vars:
   is_it_live: 4
   tasks:
