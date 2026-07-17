@@ -1,0 +1,18 @@
+- name: demo and prompt
+  hosts: localhost
+  connection: local
+  vars_prompt:
+  - name: username
+    prompt: "Please enter username"
+    private: false       # shows input as you type
+
+  - name: password
+    prompt: "Please enter password"
+    private: true        # hides input
+    tasks:
+    - name: prompt
+      ansible.builtin.debug:
+        msg: "username is:{{username}} by password is {{password}}"
+      
+    
+
