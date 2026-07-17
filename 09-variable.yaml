@@ -4,8 +4,10 @@
   gather_facts: false
   tasks:
     - name: print name
-      debug:
+      ansible.builtin.debug:
         msg: "Hi, I am learning  is {{ trainer }}, Duration is {{ duration }}"
+      
+        
         
         
 
