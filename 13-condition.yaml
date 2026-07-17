@@ -8,9 +8,6 @@
     ansible.builtin.debug:
       msg: "yes,ansible took the sessions 5"
       when: live_sessions >5
-  tasks:
-  - name: more than 5 sessions
-    ansible.builtin.debug:
-      msg: "yes,ansible took the sessions 5"
-      when: live_sessions 4<=5
+      
+  
  
