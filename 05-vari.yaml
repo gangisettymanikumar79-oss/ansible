@@ -1,0 +1,14 @@
+- name: Demo on task-level variables
+  hosts: localhost
+  gather_facts: false
+
+  vars:
+    trainer: manikumar
+    duration: 150HRS
+
+  tasks:
+    - name: Print information
+      vars:
+        course: DevSecOps Engineering
+      ansible.builtin.debug:
+        msg: "Hi, I am learning {{ course }}, Trainer is {{ trainer }}, Duration is {{ duration }}"
