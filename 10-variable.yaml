@@ -1,4 +1,4 @@
-- name: demo by the name cmd
+- name: demo by the variable cmd
   hosts: localhost
   connection: local
   gather_facts: false
