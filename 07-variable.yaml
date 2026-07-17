@@ -1,7 +1,7 @@
 - name: demo play criecket
   hosts: localhost
   connection: local
-  vars_files:
+  vars:
   - player.yaml
   
   tasks:
