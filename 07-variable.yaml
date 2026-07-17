@@ -1,6 +1,6 @@
 - name: demo play criecket
   hosts: localhost
-  connection: Callback plugins
+  connection: local
   vars_files:
   - player.yaml
   
@@ -8,6 +8,7 @@
   - name: criecket
     ansible.builtin.debug:
       msg:"{{captions}} by {{batman}} is {{bolwer}}"
+      
 
     
 
