@@ -2,7 +2,7 @@
   hosts: localhost
   connection: local
   vars:
-  - player.yaml
+    - player.yaml
   
   tasks:
   - name: criecket
