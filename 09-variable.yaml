@@ -8,6 +8,7 @@
         msg: "Hi, I am learning  is {{ trainer }}, Duration is {{ duration }}"
         
         
+        
   
 
 
