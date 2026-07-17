@@ -1,0 +1,16 @@
+- name: check the variable data type
+  hosts: localhost
+  vars:
+    course: "python with AIops"
+    duration: "150HRS"
+    is_live_sessions: true
+    tops:
+    - linux
+    - shell
+    - ansible
+    more_details:
+      month: "5"
+      trainer: "manikuamr"
+    
+
+
