@@ -1,5 +1,6 @@
 - name: check the variable live_sessions
   hosts: local
+  connection: local
   
   vars:
   is_it_live: 4
