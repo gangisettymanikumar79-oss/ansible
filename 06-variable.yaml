@@ -8,10 +8,10 @@
     - course.yaml
 
   tasks:
-    - name: "Print course details"
+    - name: "course details"
       ansible.builtin.debug:
         msg: "{{ course }} by {{ trainer }}, is {{ duration }}"
-        
+
     
     
 
