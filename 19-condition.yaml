@@ -3,6 +3,7 @@
   connection: local
   vars:
     topics: "Linux, Ansible, Terraform, Git"
+    full-name: "manikuamr"
   topmap:
     name: Ansible
     project: roboshop
