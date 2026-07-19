@@ -8,6 +8,8 @@
   - name: Convert string to list
     debug:
       msg: "{{ topics | split(',') }}"
+
+      
     
     
   
