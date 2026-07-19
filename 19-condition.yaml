@@ -3,26 +3,19 @@
   connection: local
   vars:
     topics: "Linux, Ansible, Terraform, Git"
-    
+
   tagMap:
     name: Ansible
     project: roboshop
     environment: dev 
 
-  tagsList: [
-        {
-            "key": "name",
-            "value": "Ansible"
-        },
-        {
-            "key": "project",
-            "value": "roboshop"
-        },
-        {
-            "key": "environment",
-            "value": "dev"
-        }
-    ]
+  tagsList:
+      - key: "name"
+        value: "Ansible"
+      - key: "project"
+        value: "roboshop"
+      - key: "environment"
+        value: "dev"
  
 
     
