@@ -2,13 +2,13 @@
   hosts: local
   connection: local
   vars:
-    topics: "Linux, Ansible, Terraform, Git"
-    tagMap:
-    name: Ansible
-    project: roboshop
-    environment: dev
+  topics: "Linux, Ansible, Terraform, Git"
+  tagMap: 
+  name: Ansible
+  project: roboshop
+  environment: dev
 
-    tagsList: [
+  tagsList: [
         {
             "key": "name",
             "value": "Ansible"
@@ -36,13 +36,12 @@
       msg: " Hi {{ Greeting | default('Good Morning') }}"
 
   - name: Convert map to list
-    debug:
-      msg: "{{ tagMap | dict2items  }}"
-      
-    
-  - name: Convert list to map
-    debug:
-      msg: " {{ tagsList | items2dict  }}"
+  debug:
+    msg: "{{ tagMap | dict2items }}"
+
+- name: Convert list to map
+  debug:
+    msg: "{{ tagsList | items2dict }}"
       
 
 
