@@ -3,6 +3,10 @@
   connection: local
   vars:
     topics: "Linux, Ansible, Terraform, Git"
+    topmap:
+    name: Ansible
+    project: roboshop
+    environment: dev
     
   
     taglist:
