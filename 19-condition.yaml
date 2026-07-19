@@ -42,7 +42,7 @@
   
   - name: Convert list to map
     debug:
-      msg: "{{ taglist | items2dict }}"
+      msg: "{{ tagsList | items2dict }}"
       
 
     
