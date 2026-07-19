@@ -3,12 +3,11 @@
   connection: local
   vars:
     topics: "Linux, Ansible, Terraform, Git"
-    full-name: "Manikumar Gangisetty"
-    
-  tagMap:
-    name: Ansible
-    project: roboshop
-    environment: dev 
+  tagMap: 
+    name:  "Ansible"
+    project:  "roboshop"
+    environment: "dev"
+  
 
   tagsList: [
         {
