@@ -7,7 +7,7 @@
     name: Ansible
     project: roboshop
     environment: dev
-    
+
     tagsList: [
         {
             "key": "name",
@@ -37,11 +37,11 @@
 
   - name: Convert map to list
     debug:
-      msg: "{{ tagmap | dict2items }}"
+      msg:  "{{ tagmap | dict2items }}"
     
   - name: Convert list to map
     debug:
-      msg: "{{ tagsList | items2dict }}"
+      msg:   "{{ tagsList | items2dict }}"
       
 
     
