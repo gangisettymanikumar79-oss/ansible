@@ -23,9 +23,9 @@
     debug:
       msg: "{{ Greeting | default('Good Moring') }}"
   tasks:
-  - name: Convert map to a list of key-value dictionaries
+  - name: map to list
     debug:
-      msg: "{{item}}"
+      msg: "{{tagMap | dict2items }}"
  
   
       
