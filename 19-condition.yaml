@@ -2,28 +2,12 @@
   hosts: local
   connection: local
   vars:
-    topics: "Linux, Shell, Ansible, Terraform"
-    full_name: "Manikumar kumar"
-    
-
-    tagmap:
-      name: Ansible
-      project: roboshop
-      environment: dev
-
-    tagsList:
-      - { key: "name", value: "Ansible" }
-      - { key: "project", value: "roboshop" }
-      - { key: "environment", value: "dev" }
+    topics: "Linux, Ansible, Terraform, Git"
+    full-name: "Manikumar"
 
   tasks:
-    - name: string to list
-      ansible.builtin.debug:
-        msg: "{{ topics | split(',') }}"
-
-    - name: default value if variable not defined
-      ansible.builtin.debug:
-        msg: "{{ GREETING | default('Good Morning') }}"
+    debug:
+      msg: "{{ topics | split(',') }}"
    
     
 
