@@ -22,6 +22,7 @@
   - name: defalut Value if varible not defined
     debug:
       msg: "{{ GREETING | defalut('Good Morning') }}"
+      
   
 
 
