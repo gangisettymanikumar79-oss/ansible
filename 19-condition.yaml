@@ -4,7 +4,7 @@
   vars:
     topics: "Linux, Ansible, Terraform, Git"
     
-  toplist:
+  tagmap:
     name: Ansible
     project: roboshop
     environment: dev
