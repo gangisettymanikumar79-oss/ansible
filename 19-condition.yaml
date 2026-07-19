@@ -3,7 +3,7 @@
   connection: local
   vars:
     topics: "Linux, Ansible, Terraform, Git"
-    topmap:
+    tagmap:
     name: Ansible
     project: roboshop
     environment: dev
@@ -37,7 +37,7 @@
   - name: Convert map to list
     debug:
       msg: "{{ item }}"
-    loop: "{{ topmap | dict2items }}"
+    loop: "{{ tagmap | dict2items }}"
     
   
   - name: Convert taglist to map
