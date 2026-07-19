@@ -1,48 +1,39 @@
 - name: demo on filters
   hosts: local
   connection: local
+
   vars:
     topics: "Linux, Ansible, Terraform, Git"
-  tagMap: 
-    name:  "Ansible"
-    project:  "roboshop"
-    environment: "dev"
-  
 
-  tagsList: [
-        {
-            "key": "name",
-            "value": "Ansible"
-        },
-        {
-            "key": "project",
-            "value": "roboshop"
-        },
-        {
-            "key": "environment",
-            "value": "dev"
-        }
-    ]
- 
+    tagMap:
+      name: "Ansible"
+      project: "roboshop"
+      environment: "dev"
 
-    
+    tagsList:
+      - key: "name"
+        value: "Ansible"
+      - key: "project"
+        value: "roboshop"
+      - key: "environment"
+        value: "dev"
+
   tasks:
-  - name: Convert string to list
-    debug:
-      msg: "{{ topics | split(',') }}"
+    - name: Convert string to list
+      debug:
+        msg: "{{ topics | split(',') }}"
 
-  
-  - name: default value if variable not defined
-    debug:
-      msg: " Hi {{ Greeting | default('Good Morning') }}"
+    - name: Default value if variable not defined
+      debug:
+        msg: "Hi {{ Greeting | default('Good Morning') }}"
 
-  - name: Convert map to list
-  debug:
-    msg: "{{ tagMap | dict2items }}"
+    - name: Convert map to list
+      debug:
+        msg: "{{ tagMap | dict2items }}"
 
-- name: Convert list to map
-  debug:
-    msg: "{{ tagsList | items2dict }}"
+    - name: Convert list to map
+      debug:
+        msg: "{{ tagsList | items2dict }}"
   
       
 
