@@ -1,4 +1,4 @@
-- name: install of package
+- name: demo on filters
   hosts: local
   connection: local
   vars:
