@@ -3,6 +3,16 @@
   connection: local
   vars:
     topics: "Linux, Ansible, Terraform, Git"
+  topmap:
+    name: Ansible
+    project: roboshop
+    environment: dev
+    taglist:
+      - { key: "name", value: "Ansible" }
+      - { key: "project", value: "roboshop" }
+      - { key: "environment", value: "dev" }
+ 
+
     
   tasks:
   - name: Convert string to list
@@ -12,6 +22,12 @@
   - name: default value if variable not defined
     debug:
       msg: "{{ Greeting | default('Good Moring') }}"
+  tasks:
+  - name: Convert map to a list of key-value dictionaries
+    debug:
+      msg: "{{item}}"
+ 
+  
       
     
     
