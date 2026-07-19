@@ -2,17 +2,18 @@
   hosts: local
   connection: local
   vars:
-    topics: "Linux, Shell, Ansible, Terraform"
-    full_name: "Manikumar kumar"
-    ip-address: "172.31.22.145"
-    tagmap:
+   topics: "Linux, Shell, Ansible, Terraform"
+   full_name: "Manikumar kumar"
+   ip-address: "172.31.22.145"
+  tagmap:
       name: Ansible
       project: roboshop
       environment: dev
-    tagsList:
+  tagsList:
     - { key: "name", value: "Ansible" }
     - { key: "project", value: "roboshop" }
     - { key: "environment", value: "dev" }
+    
 
   
   tasks:
