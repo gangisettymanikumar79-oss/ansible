@@ -4,10 +4,17 @@
   vars:
     topics: "Linux, Ansible, Terraform, Git"
     full-name: "Manikumar"
-
   tasks:
+  - name: Convert string to list
     debug:
       msg: "{{ topics | split(',') }}"
+    
+    
+  
+  
+
+  
+      
    
     
 
