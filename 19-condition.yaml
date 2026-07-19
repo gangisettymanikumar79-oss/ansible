@@ -32,12 +32,12 @@
   
   - name: default value if variable not defined
     debug:
-      msg: "{{ Greeting | default('Good Morning') }}"
+      msg: " Hi {{ Greeting | default('Good Morning') }}"
 
   - name: Convert map to list
     debug:
-      msg: "{{ item }}"
-    loop: "{{ tagmap | dict2items }}"
+      msg: "{{ tagmap | dict2items }}"
+    
     
   
   - name: Convert list to map
