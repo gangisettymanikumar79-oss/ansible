@@ -10,9 +10,10 @@
       project: roboshop
       environment: dev
     tagsList:
-  - { key: "name", value: "Ansible" }
-  - { key: "project", value: "roboshop" }
-  - { key: "environment", value: "dev" }
+    - { key: "name", value: "Ansible" }
+    - { key: "project", value: "roboshop" }
+    - { key: "environment", value: "dev" }
+  
   tasks:
   - name: string to list
     debug:
