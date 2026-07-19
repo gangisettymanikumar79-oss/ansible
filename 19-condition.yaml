@@ -8,8 +8,10 @@
   - name: Convert string to list
     debug:
       msg: "{{ topics | split(',') }}"
-      
-
+  tasks:
+  - name: default value if variable not defined
+    debug:
+      msg: "{{ Greeting | default('Good Moring') }}"
       
     
     
