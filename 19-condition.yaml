@@ -4,10 +4,7 @@
   vars:
     topics: "Linux, Ansible, Terraform, Git"
     
-  tagmap:
-    name: Ansible
-    project: roboshop
-    environment: dev
+  
     taglist:
       - { key: "name", value: "Ansible" }
       - { key: "project", value: "roboshop" }
