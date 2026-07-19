@@ -2,12 +2,11 @@
   hosts: local
   connection: local
   vars:
-  topics: "Linux, Ansible, Terraform, Git"
-  tagMap: 
-  name: Ansible
-  project: roboshop
-  environment: dev
-
+    topics: "Linux, Ansible, Terraform, Git"
+  tagMap:
+    name: Ansible
+    project: roboshop
+    environment: dev 
   tagsList: [
         {
             "key": "name",
