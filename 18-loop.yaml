@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   tasks:
-  - name: print name package
+  - name: install package
     ansible.builtin.debug:
       msg: "{{item}}"
     loop:
