@@ -3,7 +3,7 @@
   connection: local
   vars:
     topics: "Linux, Ansible, Terraform, Git"
-    full-name: "manikuamr"
+    
   topmap:
     name: Ansible
     project: roboshop
@@ -23,10 +23,10 @@
   - name: default value if variable not defined
     debug:
       msg: "{{ Greeting | default('Good Moring') }}"
-  tasks:
-  - name: map to list
-    debug:
-      msg: "{{tagMap | dict2items }}"
+  - name: Convert map to list
+    ansible.builtin.debug:
+      msg: "{{ item }}"
+    loop: "{{ topmap | dict2items }}"
  
   
       
