@@ -9,7 +9,7 @@
       name: Ansible
       project: roboshop
       environment: dev
-  tagsList:
+    tagsList:
   - { key: "name", value: "Ansible" }
   - { key: "project", value: "roboshop" }
   - { key: "environment", value: "dev" }
