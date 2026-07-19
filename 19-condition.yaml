@@ -40,7 +40,7 @@
     loop: "{{ tagmap | dict2items }}"
     
   
-  - name: Convert taglist to map
+  - name: Convert list to map
     debug:
       msg: "{{ taglist | items2dict }}"
       
