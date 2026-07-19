@@ -43,6 +43,13 @@
   - name: Convert list to map
     debug:
       msg: " {[ tagsList | items2dict  ]}"
+
+
+
+
+
+
+      
       
       
 
