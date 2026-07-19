@@ -1,26 +1,30 @@
 - name: demo on filters
   hosts: local
   connection: local
+
   vars:
     topics: "Linux, Shell, Ansible, Terraform"
     full_name: "Manikumar kumar"
-    ip-address: "172.31.22.145"
+    ip_address: "172.31.22.145"
+
     tagmap:
       name: Ansible
       project: roboshop
       environment: dev
-  tagsList:
-  - { key: "name", value: "Ansible" }
-  - { key: "project", value: "roboshop" }
-  - { key: "environment", value: "dev" }
+
+    tagsList:
+      - { key: "name", value: "Ansible" }
+      - { key: "project", value: "roboshop" }
+      - { key: "environment", value: "dev" }
+
   tasks:
-  - name: string to list
-    debug:
-      msg: "{{ topics | split(',') }}"
-  tasks:
-  - name: defalut Value if varible not defined
-    debug:
-      msg: "{{ GREETING | defalut('Good Morning') }}"
+    - name: string to list
+      debug:
+        msg: "{{ topics | split(',') }}"
+
+    - name: default value if variable not defined
+      debug:
+        msg: "{{ GREETING | default('Good Morning') }}"
   
 
 
