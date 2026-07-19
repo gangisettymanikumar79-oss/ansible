@@ -9,10 +9,21 @@
     environment: dev
     
   
-    taglist:
-      - { key: "name", value: "Ansible" }
-      - { key: "project", value: "roboshop" }
-      - { key: "environment", value: "dev" }
+    
+    tagsList: [
+        {
+            "key": "name",
+            "value": "Ansible"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "environment",
+            "value": "dev"
+        }
+   ]
  
 
     
