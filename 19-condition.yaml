@@ -35,6 +35,7 @@
   - name: Convert taglist to map
     debug:
       msg: "{{ taglist | items2dict }}"
+      
 
     
 
