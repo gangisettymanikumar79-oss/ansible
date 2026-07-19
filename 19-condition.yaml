@@ -13,6 +13,7 @@
     - { key: "name", value: "Ansible" }
     - { key: "project", value: "roboshop" }
     - { key: "environment", value: "dev" }
+
   
   tasks:
   - name: string to list
@@ -22,7 +23,7 @@
   - name: defalut Value if varible not defined
     debug:
       msg: "{{ GREETING | defalut('Good Morning') }}"
-      
+
   
 
 
