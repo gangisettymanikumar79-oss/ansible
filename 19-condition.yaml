@@ -37,11 +37,13 @@
 
   - name: Convert map to list
     debug:
-      msg:  "{{  tagmap |   }}"
+      msg: "{{ tagMap | dict2items  }}"
+      
     
   - name: Convert list to map
     debug:
-      msg:   "{{ tagsList |  }}"
+      msg: "{{ tagsList | items2dict  }}"
+      
       
 
     
