@@ -5,7 +5,7 @@
     topics: "Linux, Shell, Ansible, Terraform"
     full_name: "Manikumar kumar"
     ip-address: "172.31.22.145"
-  tagmap:
+    tagmap:
       name: Ansible
       project: roboshop
       environment: dev
@@ -17,7 +17,7 @@
   - name: string to list
     debug:
       msg: "{{ topics | split(',') }}"
-  tasks:
+  
   - name: defalut Value if varible not defined
     debug:
       msg: "{{ GREETING | defalut('Good Morning') }}"
