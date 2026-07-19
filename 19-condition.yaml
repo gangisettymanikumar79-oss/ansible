@@ -4,8 +4,8 @@
   vars:
     topics: "Linux, Shell, Ansible, Terraform"
     full_name: "Manikumar kumar"
-    ip-address: "172.31.22.145"
     
+
     tagmap:
       name: Ansible
       project: roboshop
