@@ -11,8 +11,10 @@
       msg: "{{user_output}}"
 
   - name:  list file
-    
     shell: ls -l > /tmp/files.txt
+
+    
+    
 
     
 
