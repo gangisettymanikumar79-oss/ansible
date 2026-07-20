@@ -4,9 +4,9 @@
   vars:
     topices: "Linux, ansible,docker, git"
     tagMap:
-    - name: ansible
-      project: roboshop
-      environment: dev
+     name: ansible
+     project: roboshop
+     environment: dev
   tasks: 
   - name: convert to strong List
     ansible.builtin.debug:
