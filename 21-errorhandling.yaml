@@ -8,9 +8,9 @@
     register: user_output
     ignore_errors: yes
 
-  - name: user status
+  - name: print user_output
     debug:
-      msg: "Return code is {{ user_output.rc }}"
+      msg:  "{{user_output}}"
 
     
     
