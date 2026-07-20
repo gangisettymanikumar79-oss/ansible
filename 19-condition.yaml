@@ -6,8 +6,8 @@
   tasks: 
   - name: convert to strong List
     ansible.builtin.debug:
-      msg: " Topices: {{topices | split(',')}}"
+      msg: " Topices: {{ topices | split(',') }}"
 
   - name: set default value 
     ansible.builtin.debug:
-      msg: "{{Greeting |default(Good Morning)}}"
+      msg: "{{ Greeting | default('Good Morning') }}"
