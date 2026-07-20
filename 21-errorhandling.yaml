@@ -1,6 +1,7 @@
 - name : demo on Error Handling
   hosts: local
   connection: local
+  became: yes
   tasks: 
   - name: check if roboshop user exists
     command: id roboshop
