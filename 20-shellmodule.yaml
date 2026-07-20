@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   tasks:
-  - name: shell  test
-    shell: cat /etc/passwd | greep root
+  - name: shell test
+    shell: cat /etc/passwd | grep root
     register: user_output
   
   - name: print output
