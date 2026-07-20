@@ -1,0 +1,11 @@
+- name : demo on Error Handling
+  hosts: local
+  connection: local
+  tasks: 
+  - name: check if roboshop user exists
+    command: id roboshop
+    register: user_output
+    ignore_errors: ture
+  - name: create user only if missing
+    command: useradd roboshop
+    when: user_output.rc !=0
