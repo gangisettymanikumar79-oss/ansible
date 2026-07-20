@@ -2,12 +2,6 @@
   hosts: local
   connection: local
   tasks:
-  - name: need pipe-use shell
-    shell: cat /etc/passwd | grep root
+  - name: command test
+    command: cat /etc/passwd | greep root
 
-  - name: redirect out-put file
-    shell: ls -ltr > /tmp/files.txt
-    
-  - name: simple-command - no pipe needed
-    command: id roboshop
-    
