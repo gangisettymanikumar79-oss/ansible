@@ -4,12 +4,14 @@
   
   tasks: 
   - name: check if roboshop user exists
-    ansible.builtin.command: id roboshop
+    command: id roboshop
     register: user_output
     ignore_errors: yes
 
   - name: user status
-  ansible.builtin.debug:
-    msg: "Return code is {{ user_output.rc }}"
+    debug:
+      msg: "Return code is {{ user_output.rc }}"
+
+    
     
   
