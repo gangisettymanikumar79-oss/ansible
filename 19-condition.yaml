@@ -2,8 +2,10 @@
   hosts: local
   connection: local
   vars:
-  topices: "Linux, ansible,docker, git"
+    topices: "Linux, ansible,docker, git"
   tasks: 
   - name: convert to strong List
     ansible.builtin.debug:
       msg: " Topices: {{topices | split(',')}}"
+
+  
