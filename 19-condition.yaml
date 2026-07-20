@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-  topices: Linux, ansible,docker, git
+  
   tasks: 
   - name: convert to filters
     ansible.builtin.debug:
