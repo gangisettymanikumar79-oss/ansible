@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   tasks:
-  - name: command test
+  - name: shell  test
     shell: cat /etc/passwd | greep root
     register: user_output
    
