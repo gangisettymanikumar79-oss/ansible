@@ -48,6 +48,10 @@
     ansible.builtin.debug:
       msg: "{{ 'hello world' | upper  }}"
 
+  - name: Convert string to lowercase
+    ansible.builtin.debug:
+      msg: "{{ 'hello world' | lower }}"
+
 
 
   
