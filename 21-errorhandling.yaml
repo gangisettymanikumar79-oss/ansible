@@ -7,5 +7,9 @@
     ansible.builtin.command: id roboshop
     register: user_output
     ignore_errors: yes
+
+  - name: user status
+  ansible.builtin.debug:
+    msg: "Return code is {{ user_output.rc }}"
     
   
