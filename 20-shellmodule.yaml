@@ -3,5 +3,6 @@
   connection: local
   tasks:
   - name: command test
-    command: cat /etc/passwd | greep root
+   # command: cat /etc/passwd | greep root
+    shell: cat /etc/passwd | greep root
 
