@@ -8,6 +8,6 @@
     ansible.builtin.debug:
       msg: " Topices: {{topices | split(',')}}"
 
-  - name: default value for variable
+  - name: set default value 
     ansible.builtin.debug:
-      msg: "{{Greeting |default(GoodMorning)}}"
+      msg: "{{Greeting |default(Good Morning)}}"
