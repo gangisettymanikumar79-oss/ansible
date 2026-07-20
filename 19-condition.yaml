@@ -4,6 +4,6 @@
   vars:
   topices: "Linux, ansible,docker, git"
   tasks: 
-  - name: convert to filters
+  - name: convert to strong List
     ansible.builtin.debug:
-      msg: "sting Topices: {{topices | split(',')}}"
+      msg: " Topices: {{topices | split(',')}}"
