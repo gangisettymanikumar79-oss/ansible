@@ -6,6 +6,4 @@
     command: id roboshop
     register: user_output
     ignore_errors: ture
-  - name: create user only if missing
-    command: useradd roboshop
-    when: user_output.rc !=0
+  
