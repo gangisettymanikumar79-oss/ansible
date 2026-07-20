@@ -4,6 +4,6 @@
   tasks:
   - name: command test
     shell: cat /etc/passwd | greep root
-
+    register: user_output
    
     
