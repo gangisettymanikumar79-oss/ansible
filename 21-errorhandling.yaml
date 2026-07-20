@@ -6,5 +6,5 @@
   - name: check if roboshop user exists
     command: id roboshop
     register: user_output
-    ignore_errors: ture
+    
   
