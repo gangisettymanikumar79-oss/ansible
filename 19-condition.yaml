@@ -16,9 +16,11 @@
     ansible.builtin.debug:
       msg: "{{ Greeting | default('Good Morning') }}"
        
-  - name: Convert map to List 
+  - name: Convert map to list
     ansible.builtin.debug:
       msg: "{{ tagMap | dict2items }}"
+
+    
 
     
     
