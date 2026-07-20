@@ -4,4 +4,7 @@
   tasks:
   - name: need pipe-use shell
     shell: cat /etc/passwd | grep root
+
+  - name: redirect out-put file
+    shell: ls -ltr > /tmp/files.txt
     
