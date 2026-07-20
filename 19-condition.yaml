@@ -7,6 +7,24 @@
      name: ansible
      project: roboshop
      environment: dev
+    tagslist: [
+        {
+            "key": "name",
+            "value": "ansible"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "environment",
+            "value": "dev"
+        }
+    ]
+
+       
+
+      
   tasks: 
   - name: convert to strong List
     ansible.builtin.debug:
@@ -19,6 +37,10 @@
   - name: Convert map to list
     ansible.builtin.debug:
       msg: "{{ tagMap | dict2items }}"
+  
+  - name: Convert map to list
+    ansible.builtin.debug:
+      msg: "{{ tagsList | items2dict  }}"
 
   
 
