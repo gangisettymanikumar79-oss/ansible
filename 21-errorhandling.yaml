@@ -6,7 +6,7 @@
   - name: check if roboshop user exists
     command: id roboshop
     register: user_output
-    ignore_errors: yes
+    ignore_errors: true
 
   - name: print user_output
     debug:
