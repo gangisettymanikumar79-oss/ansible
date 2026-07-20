@@ -9,7 +9,7 @@
      project: roboshop
      environment: dev
     full_name: "Manikumar Gangisetty"
-    my_ip: "172.31.26.108"
+    ip_address: 172.31.26.108
     tagslist: [
         {
             "key": "name",
@@ -53,9 +53,9 @@
     ansible.builtin.debug:
       msg: "{{ 'hello world' | lower }}"
 
-  - name: check my_ip
+  - name: check ipv4 address
     ansible.builtin.debug:
-      msg: "{{ my_ip | ansible.utils.my_ip }}"
+      msg: "{{ ip_address | ansible.utils.ipv4 }}"
 
 
 
