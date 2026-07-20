@@ -3,10 +3,12 @@
   connection: local
   vars:
     topices: "Linux, ansible,docker, git"
+    
     tagMap:
      name: ansible
      project: roboshop
      environment: dev
+    full_name: "Manikumar Gangisetty"
     tagslist: [
         {
             "key": "name",
@@ -41,6 +43,12 @@
   - name: Convert map to list
     ansible.builtin.debug:
       msg: "{{ tagslist | items2dict  }}"
+
+  - name: Convert string to uppercase
+    ansible.builtin.debug:
+      msg: "{{ 'hello world' | upper  }}"
+
+
 
   
 
