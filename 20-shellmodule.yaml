@@ -10,6 +10,12 @@
     ansible.builtin.debug:
       msg: "{{user_output}}"
 
+  - name:  list file
+    ansible.builtin.debug:
+    shell: ls -l > /tmp/files.txt
+
+    
+
      
   
   
