@@ -3,6 +3,10 @@
   connection: local
   vars:
     topices: "Linux, ansible,docker, git"
+  tagMap:
+  - name: ansible
+    project: roboshop
+    environment: dev
   tasks: 
   - name: convert to strong List
     ansible.builtin.debug:
@@ -11,3 +15,10 @@
   - name: set default value 
     ansible.builtin.debug:
       msg: "{{ Greeting | default('Good Morning') }}"
+  - name: Convert map to List 
+    ansible.builtin.debug:
+      msg: "{{ tagMap | dict2items }}"
+
+    
+
+  
